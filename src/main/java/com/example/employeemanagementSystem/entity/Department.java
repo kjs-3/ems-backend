@@ -16,7 +16,7 @@ import java.util.List;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long depId;
+    private Long depId;
     @Column(name = "depName")
     private String depName;
     @OneToMany(mappedBy="department",cascade = CascadeType.ALL)
